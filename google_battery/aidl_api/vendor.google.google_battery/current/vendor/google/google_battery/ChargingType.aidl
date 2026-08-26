@@ -19,7 +19,7 @@
 package vendor.google.google_battery;
 @Backing(type="int") @VintfStability
 enum ChargingType {
-  UNKNOWN = -1,
+  UNKNOWN = (-1) /* -1 */,
   NONE = 0,
   FAULT = 1,
   JEITA = 2,

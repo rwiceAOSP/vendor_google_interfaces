@@ -1,8 +1,8 @@
 aidl_interface {
-    name: "vendor.google.google_battery",
+    name: "com.google.hardware.biometrics.fingerprint.fingerprint-ext",
 
     srcs: [
-        "vendor/google/google_battery/*.aidl",
+        "com/google/hardware/biometrics/fingerprint/*.aidl",
     ],
 
     stability: "vintf",

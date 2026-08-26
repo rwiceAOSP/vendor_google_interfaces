@@ -36,5 +36,16 @@ interface IGoogleBattery {
   int getHealthIndex();
   vendor.google.google_battery.BatteryHealthStatus getHealthStatus();
   vendor.google.google_battery.DockDefendStatus getDockDefendStatus();
+  vendor.google.google_battery.BatteryHealthStats getHealthStats(in vendor.google.google_battery.BatteryHealthAlgo algo);
+  void scheduleCalibration(in vendor.google.google_battery.BatteryCalibrationMode mode);
+  vendor.google.google_battery.BatteryCalibrationState getCalibrationState();
+  void setStringProperty(in vendor.google.google_battery.Feature feature, in int property, in String value);
+  void clearBatteryDefenders(in vendor.google.google_battery.BatteryDefendType type);
+  void setChargingPolicy(in vendor.google.google_battery.BatteryChargingPolicy policy);
+  String getStringProperty(in vendor.google.google_battery.Feature feature, in int property);
+  vendor.google.google_battery.BatteryChargingPolicy getChargingPolicy();
+  String[] getRelaxationData(in long arg);
+  int getTimeToTargetSoc(in int targetSoc);
+  vendor.google.google_battery.PriorityChargingInfo getPriorityChargingInfo(in int arg);
   const int RESULT_IO_ERROR = 1;
 }

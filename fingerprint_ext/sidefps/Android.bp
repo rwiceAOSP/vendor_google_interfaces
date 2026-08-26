@@ -1,8 +1,8 @@
 aidl_interface {
-    name: "vendor.google.google_battery",
+    name: "com.google.hardware.biometrics.sidefps.fingerprint-ext",
 
     srcs: [
-        "vendor/google/google_battery/*.aidl",
+        "com/google/hardware/biometrics/sidefps/*.aidl",
     ],
 
     stability: "vintf",
@@ -20,12 +20,5 @@ aidl_interface {
             enabled: false,
         },
     },
-    versions_with_info: [
-        {
-            version: "1",
-            imports: [],
-        },
-    ],
     frozen: false,
-
 }

@@ -16,18 +16,19 @@
 // with such a backward incompatible change, it has a high risk of breaking
 // later when a module using the interface is updated, e.g., Mainline modules.
 
-package vendor.google.google_battery;
-@Backing(type="int") @VintfStability
-enum Feature {
-  ADAPTIVE_CHARGING = 0,
-  TEMP_DEFEND = 1,
-  TRICKLE_DEFEND = 2,
-  DWELL_DEFEND = 3,
-  DREAM_DEFEND = 4,
-  DC_CHARGING = 5,
-  AGE_ADJUSTED_CHARGE_RATE = 6,
-  DOCK_DEFEND = 7,
-  BATTERY_HEALTH_INDEX = 8,
-  CHARGING_SPEED_INDICATOR = 9,
-  FEATURE_MAX,
+package vendor.google.wireless_charger;
+@VintfStability
+parcelable DockInfo {
+  String id;
+  String qiId;
+  String serial;
+  int ptmc;
+  boolean getInfoSupported;
+  vendor.google.wireless_charger.FirmwareVersion version;
+  byte fwSlot;
+  byte fwSlotMask;
+  String manufacturer;
+  String product;
+  byte authType;
+  @nullable vendor.google.wireless_charger.FirmwareVersion otaVersion;
 }

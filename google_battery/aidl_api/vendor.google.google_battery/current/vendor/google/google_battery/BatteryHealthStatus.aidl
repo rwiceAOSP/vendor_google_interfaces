@@ -19,7 +19,7 @@
 package vendor.google.google_battery;
 @Backing(type="int") @VintfStability
 enum BatteryHealthStatus {
-  UNKNOWN = -1,
+  UNKNOWN = (-1) /* -1 */,
   NOMINAL = 0,
   MARGINAL = 1,
   NEEDS_REPLACEMENT = 2,

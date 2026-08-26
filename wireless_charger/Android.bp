@@ -1,8 +1,8 @@
 aidl_interface {
-    name: "vendor.google.google_battery",
+    name: "vendor.google.wireless_charger",
 
     srcs: [
-        "vendor/google/google_battery/*.aidl",
+        "vendor/google/wireless_charger/*.aidl",
     ],
 
     stability: "vintf",
@@ -20,12 +20,5 @@ aidl_interface {
             enabled: false,
         },
     },
-    versions_with_info: [
-        {
-            version: "1",
-            imports: [],
-        },
-    ],
     frozen: false,
-
 }

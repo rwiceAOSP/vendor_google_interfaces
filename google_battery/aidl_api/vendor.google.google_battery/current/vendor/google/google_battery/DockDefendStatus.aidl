@@ -19,8 +19,8 @@
 package vendor.google.google_battery;
 @Backing(type="int") @VintfStability
 enum DockDefendStatus {
-  OVERRIDE_DISABLED = -2,
-  SETTINGS_DISABLED = -1,
+  OVERRIDE_DISABLED = (-2) /* -2 */,
+  SETTINGS_DISABLED = (-1) /* -1 */,
   ENABLED = 0,
   TRIGGERED = 1,
 }
